@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<Scholen>
+  <School>
+    <Schoolnaam>Basisschool Brugge centrum</Schoolnaam>
+    <Adres>Spiegelrei</Adres>
+    <Huisnummer>15</Huisnummer>
+    <Postcode>8000</Postcode>
+    <Gemeente>Brugge</Gemeente>
+    <Url>http://www.bruggecentrum.be/</Url>
+    <Logourl>http://www.bruggecentrum.be/Home%20bestanden/logo.jpg</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Basisschool De Pannebeke</Schoolnaam>
+    <Adres>Pannebekestraat</Adres>
+    <Huisnummer>34</Huisnummer>
+    <Postcode>8000</Postcode>
+    <Gemeente>Brugge</Gemeente>
+    <Url>http://www.brugge-depannebeke.be/</Url>
+    <Logourl>https://lh6.googleusercontent.com/iV19-J0mg3vDpnr9H8vkMrwI5NODkHiksz8ZL1xeDED4_M8SEnlRgw33qy74jrv24dQf9bGACz0</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Basisschool De Regenboog</Schoolnaam>
+    <Adres>Karel Ledeganckstraat</Adres>
+    <Huisnummer>3</Huisnummer>
+    <Postcode>8000</Postcode>
+    <Gemeente>Brugge</Gemeente>
+    <Url>http://www.brugge-deregenboog.be/</Url>
+    <Logourl>http://www.brugge-deregenboog.be/pictures/logo-BS-de-regenboog.gif</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Basisschool De Springplank</Schoolnaam>
+    <Adres>Hugo Losschaertstraat</Adres>
+    <Huisnummer>5</Huisnummer>
+    <Postcode>8000</Postcode>
+    <Gemeente>Brugge</Gemeente>
+    <Url>http://www.brugge-despringplank.be/</Url>
+    <Logourl>http://www.brugge-despringplank.be/pictures/logo-BS-de-springplank_Brugge.gif</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Basisschool MANITOBA</Schoolnaam>
+    <Adres>Manitobalaan</Adres>
+    <Huisnummer>48</Huisnummer>
+    <Postcode>8200</Postcode>
+    <Gemeente>Sint-Andries</Gemeente>
+    <Url>http://www.bs-st-andries.be/</Url>
+    <Logourl>https://lh6.googleusercontent.com/_gBNyY22oOJozmfuRI7GeEdO1haJ0HMz9KfsM5PBwCRCcQE2utpocEb6JK8od9dM6MB6CJy9yH8</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Freinetschool De Boomhut</Schoolnaam>
+    <Adres>Koning Leopold III-laan</Adres>
+    <Huisnummer>102</Huisnummer>
+    <Postcode>8200</Postcode>
+    <Gemeente>Sint-Andries</Gemeente>
+    <Url>http://www.deboomhut-freinetschool.be/nieuws/</Url>
+    <Logourl>http://www.deboomhut-freinetschool.be/images/logo.jpg</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Koninklijk Atheneum Assebroek</Schoolnaam>
+    <Adres>Daverlostraat</Adres>
+    <Huisnummer>132</Huisnummer>
+    <Postcode>8310</Postcode>
+    <Gemeente>Assebroek</Gemeente>
+    <Url>http://www.ka-assebroek.be/</Url>
+    <Logourl>null</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Basisschool Paalbos</Schoolnaam>
+    <Adres>Gemeneweideweg-Zuid</Adres>
+    <Huisnummer>121</Huisnummer>
+    <Postcode>8310</Postcode>
+    <Gemeente>Assebroek</Gemeente>
+    <Url>http://www.basisschoolpaalbos.be/</Url>
+    <Logourl>http://www.basisschoolpaalbos.be/sites/default/files/logo_0.png</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Basisschool De Linde</Schoolnaam>
+    <Adres>Brieversweg</Adres>
+    <Huisnummer>185</Huisnummer>
+    <Postcode>8310</Postcode>
+    <Gemeente>Sint-Kruis</Gemeente>
+    <Url>http://www.bsdelinde.sgr25.be/joomla_linde/</Url>
+    <Logourl>http://www.bsdelinde.sgr25.be/joomla_linde/templates/rhuk_milkyway_ext_16/images/bs_delinde_logo.png</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Basisschool De Tandem</Schoolnaam>
+    <Adres>Leopold Debruynestraat</Adres>
+    <Huisnummer>56</Huisnummer>
+    <Postcode>8310</Postcode>
+    <Gemeente>Sint-kruis</Gemeente>
+    <Url>http://www.detandem.be/template.asp?f=home.asp</Url>
+    <Logourl>http://www.detandem.be/accounts/142/images/layout/topmenu_01.gif</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Basisschool Sint-Michiels</Schoolnaam>
+    <Adres>Rijselstraat</Adres>
+    <Huisnummer>71</Huisnummer>
+    <Postcode>8200</Postcode>
+    <Gemeente>Sint-Michiels</Gemeente>
+    <Url>http://www.gemeenteschool-sintmichiels.be/</Url>
+    <Logourl>http://www.sbsstmichiels.be/site/images/Basisschool_st-michiels2_home.png</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Basisschool de Triangel</Schoolnaam>
+    <Adres>Diksmuidse Heerweg</Adres>
+    <Huisnummer>159</Huisnummer>
+    <Postcode>8200</Postcode>
+    <Gemeente>Sint-Andries</Gemeente>
+    <Url>http://www.de-triangel.be</Url>
+    <Logourl>http://www.de-triangel.be/figuren/logo&apos;s/tria1.jpg</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Basisschool Ter Poorten</Schoolnaam>
+    <Adres>Stationsstraat</Adres>
+    <Huisnummer>25</Huisnummer>
+    <Postcode>8380</Postcode>
+    <Gemeente>Lissewege</Gemeente>
+    <Url>http://www.terpoorten.be/welkom/dag_surfer/</Url>
+    <Logourl>http://www.terpoorten.be/img/boog.png</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Basisschool De Touwladder</Schoolnaam>
+    <Adres>Collegestraat</Adres>
+    <Huisnummer>24bis</Huisnummer>
+    <Postcode>8310</Postcode>
+    <Gemeente>Assebroek</Gemeente>
+    <Url>http://olvat.olvadetouwladder.be/</Url>
+    <Logourl>http://olvat.olvadetouwladder.be/sites/default/files/styles/logo/public/kop/logo250250.png?itok=E0IjkV8B</Logourl>
+  </School>
+  <School>
+    <Schoolnaam>Basisschool Kantelberg</Schoolnaam>
+    <Adres>De Linde</Adres>
+    <Huisnummer>94</Huisnummer>
+    <Postcode>8310</Postcode>
+    <Gemeente>Sint-Kruis</Gemeente>
+    <Url>http://www.kantelberg.be</Url>
+    <Logourl>http://www.kantelberg.be/templates/rt_radiance/images/logo/dark/logo.png</Logourl>
+  </School>
+</Scholen>

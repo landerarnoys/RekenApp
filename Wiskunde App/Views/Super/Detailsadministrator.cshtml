@@ -1,0 +1,64 @@
+﻿@model Wiskunde_App.Models.ApplicationUser
+
+@{
+    ViewBag.Title = "Detailsadministrator";
+    Layout = "~/Views/Shared/_layoutsuper.cshtml";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="@Url.Action("Dashboard", "Super")">Scholen</a></li>
+                <li><a href="@Url.Action("VoegAdminUserToe", "Beheer")">Voeg schooladministrator toe</a></li>
+                <li class="active"><a href="">Overzicht schooladministrators</a></li>
+                <li><a href="@Url.Action("Accountwijzigen", "Super")">Account wijzigen</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9 well">
+
+
+            <h1>Details administrator</h1>
+            <div>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Voornaam)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Voornaam)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Familienaam)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Familienaam)
+                    </dd>
+
+                    <dt>
+                        School
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.school.Naam)
+                    </dd>
+
+                    <dt>
+                        Gebruikersnaam
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.UserName)
+                    </dd>
+
+                </dl>
+            </div>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+                @Html.ActionLink("Terug naar overzicht ", "overzichtadmins")
+            </p>
+</div>
+</div>
+</div>

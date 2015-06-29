@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Wiskunde_App.Models.Leerling>
+
+@{
+    ViewBag.Title = "Overzichtleerlingen";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Overzicht leerlingen</h2>
+
+<p>
+    @Html.ActionLink("Nieuwe leerling toevoegen", "Voegnieuweleerlingtoe")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Voornaam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Familienaam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Klasnummer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FotoLeerling)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Voornaam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Familienaam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Klasnummer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FotoLeerling)
+        </td>
+        <td>
+            @Html.ActionLink("Wijzigen", "Wijzigleerling", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Detailsleerling", new { id=item.ID }) |
+            @Html.ActionLink("Verwijderen", "Verwijderleerling", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

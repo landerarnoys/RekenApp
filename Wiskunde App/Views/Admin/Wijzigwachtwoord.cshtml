@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Wijzigwachtwoord";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="@Url.Action("Dashboard", "Admin")"><i class="fa fa-home fa-fw"></i>Home</a></li>
+                <li><a href="@Url.Action("Klassen","Admin")"><i class="fa fa-list-alt fa-fw"></i>Klassen</a></li>
+                <li><a href="@Url.Action("Leerkrachten","Admin")"><i class="fa fa-file-o fa-fw"></i>Leerkrachten</a></li>
+                <li><a href="@Url.Action("Leerlingen", "Admin")"><i class="fa fa-bar-chart-o fa-fw"></i>Leerlingen</a></li>
+                <li class="active"><a href=""><i class="fa fa-table fa-fw"></i>Wijzig schooladministrator</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9 well">
+            <h1>Wijzig wachtwoord</h1>
+            @Html.Partial("~/Views/Beheer/Wachtwoordwijzigen.cshtml");
+            
+        </div>
+        <div>
+           @if(ViewBag.StatusMessage != null)
+           { 
+            @ViewBag.StatusMessage
+           }
+        </div>
+    </div>
+</div>
+

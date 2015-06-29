@@ -1,0 +1,588 @@
+﻿/*Font face*/
+@font-face {
+    font-family: 'kg_the_last_timeregular';
+    src: url('../fonts/kgthelasttime-webfont.eot');
+    src: url('../fonts/kgthelasttime-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/kgthelasttime-webfont.woff') format('woff'), url('../fonts/kgthelasttime-webfont.ttf') format('truetype'), url('../fonts/kgthelasttime-webfont.svg#kg_the_last_timeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: kg_the_last_timeregular;
+}
+
+/*#region 1. Chooser Leerlingen - Docenten*/
+
+/*Leerlingen - Docenten Chooser*/
+.headerLeerlingenDocenten {
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(../Images/bg2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Holds all of the buttons*/
+div.headerLeerlingenDocenten > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 {
+    text-align: center;
+    width: 100%;
+}
+    /*Holds one button*/
+    div.headerLeerlingenDocenten > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.row {
+        margin-top: 2%;
+    }
+
+        /*The button img holder*/
+        div.headerLeerlingenDocenten > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.row > div {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        /*Button for chosing, making it look like a heading*/
+        div.headerLeerlingenDocenten > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.row > form > button {
+            margin-top: 2%;
+            font-size: xx-large;
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+
+        /*Leerling buton specific*/
+        div.headerLeerlingenDocenten > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.row > div[data-cont="leerling"] {
+            background-color: rgb( 178, 240, 100 );
+        }
+
+        /*Leerkracht button specific*/
+        div.headerLeerlingenDocenten > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.row > div[data-cont="leerkracht"] {
+            background-color: rgb( 73, 196, 226 );
+        }
+
+/*#endregion*/
+
+/*#region 2. Leerlingen Login*/
+
+/*#region 2.1 Dialer*/
+/*Dialer buttons*/
+div.buttonDialer {
+    margin: 1%;
+    height: 20%;
+    border-radius: 6px;
+}
+
+/*Dialer*/
+
+.dialer {
+    min-width: 100%;
+    min-height:100%;
+    position: relative;
+    overflow: hidden;
+    background: url(../Images/bg3_dark.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: kg_the_last_timeregular;
+}
+
+    .dialer > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.input-group {
+        border: 10px rgb( 178, 240, 100 ) solid;
+        border-radius: 6px;
+    }
+
+/*input div*/
+div.dialer > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.input-group > input {
+    font-size: 6em;
+    height: 100%;
+    color: white;
+    border: 0px;
+    text-align: center;
+    background-color: transparent;
+}
+
+
+    /*Disable the disable icon on hover*/
+    div.dialer > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.input-group > input:hover {
+        cursor: default;
+    }
+
+/*The title*/
+.dialer > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.row > h1 {
+    font-size: xx-large;
+    font-family: kg_the_last_timeregular;
+    margin-left: 2%;
+}
+
+.dialer .dwwg .dwwr{
+    background-color:rgb(41,40,41);
+}
+
+.green {
+    background-color: rgb( 178, 240, 100 );
+    border-radius: 6px;
+}
+
+    .green:hover {
+        background-color: rgb( 160, 230, 80 );
+    }
+
+.blue {
+    background-color: rgb( 73, 196, 226 );
+    border-radius: 6px;
+}
+
+    .blue:hover {
+        background-color: rgb( 53, 176, 206 );
+    }
+
+.red {
+    background-color: rgb(255,77,77);
+    border-radius: 6px;
+}
+
+    .red:hover {
+        background-color: rgb(235,57,57);
+        border-radius: 6px;
+    }
+
+/*#endregion*/
+
+/*#region 2.2 School Kiezer*/
+
+/*Container which holds the hole body*/
+div.schoolChooser {
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(../Images/bg3_dark.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+}
+
+    /*Title*/
+    div.schoolChooser > div.col-lg-12.col-md-12.col-sm-12 > div.row > h1 {
+        font-family: kg_the_last_timeregular;
+        margin-left: 5%;
+        font-size: 2.5em;
+        margin-bottom: 1%;
+    }
+
+/*Icon for Title*/
+/*div.schoolChooser > div.col-lg-12.col-md-12.col-sm-12 > div.row > h1:before {
+            content: "";
+            background: url(../Images/backsign.png) no-repeat;
+            display: block;
+            width: 55px;
+            height: 50px;
+            float: left;
+            margin: 0 6px 0 0;
+        }*/
+
+/*Container which holds one school object*/
+div.row.schoolRow > div.col-sm-4.col-md-4.col-lg-4 {
+    text-align: center;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+    /*Image in the container which holds one school object*/
+    div.row.schoolRow > div.col-sm-4.col-md-4.col-lg-4 > a > img {
+        border: rgb( 178, 240, 100 ) 5px solid;
+    }
+
+        /*Image in the container which holds one school object*/
+        div.row.schoolRow > div.col-sm-4.col-md-4.col-lg-4 > a > img:hover {
+            border: rgb( 73, 196, 226 ) 5px solid;
+        }
+
+    /*h3 tag in the container which holds one school object*/
+    div.row.schoolRow > div.col-sm-4.col-md-4.col-lg-4 > h3 {
+        font-size: 1.5em;
+    }
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region 3. Klassen Login*/
+
+.klasChooser {
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(../Images/bg3_dark.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+}
+
+/*Title*/
+div.klasChooser > div.col-lg-12.col-md-12.col-sm-12 > div.row > h1 {
+    font-family: kg_the_last_timeregular;
+    margin-left: 5%;
+    font-size: 2.5em;
+    margin-bottom: 1%;
+}
+
+/*Class for display a grade*/
+.h1-circle {
+    border-radius: 50%;
+    border: rgb( 178, 240, 100 ) 5px solid;
+    height: 140px;
+    width: 140px;
+    vertical-align: middle;
+    background-color: white;
+    color: grey;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 3.5em;
+}
+
+    .h1-circle:hover {
+        border: rgb( 73, 196, 226) 5px solid;
+    }
+
+/*Container which holds one grade object*/
+div.row.klasRow > div.col-sm-3.col-md-3.col-lg-3 {
+    text-align: center;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+/*#endregion*/
+
+/*#region 4. Error pages*/
+
+/*#region 4.1 404*/
+div.NotFound404 {
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(../Images/bgSunset.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+    /*Text of 404*/
+    div.NotFound404 > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > h1 {
+        width: 60%;
+        font-family: kg_the_last_timeregular;
+        font-size: 4em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Container which holds logo*/
+    div.NotFound404 > footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+        /*Logo Image*/
+        div.NotFound404 > footer > img.img-responsive[src="/Images/Logo_Flor_Verbaasd.png"] {
+            width: 475px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+/*Responsiveness*/
+@media (max-height: 650px) {
+    /*Hide Logo when it comes to near the text*/
+    div.NotFound404 > footer {
+        visibility: hidden;
+    }
+}
+/*#endregion*/
+
+/*#region 4.2 Stuck while processing*/
+div.ErrorMode {
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(../Images/bgCogs.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+    div.ErrorMode > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > h1 {
+        width: 60%;
+        font-family: kg_the_last_timeregular;
+        font-size: 4em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.ErrorMode > img.img-responsive[src="/Images/Logo_Flor_Verbaasd_potlood.png"] {
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region 5. Leerkracht login*/
+
+div.loginLeerkracht {
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+}
+
+    div.loginLeerkracht > div.row {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.loginLeerkracht div.input-group {
+        margin-bottom: 1%;
+    }
+
+    div.loginLeerkracht > div.row > div.text-center > img[src="/Images/Logo_Flor.png"].img-responsive {
+        width: 339px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/*#endregion*/
+
+/*#region 6. Leerlingen*/
+
+div.leerlingContainer {
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(../Images/bg3_dark.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+    /*Title: Kies uw Foto*/
+    div.leerlingContainer > div.col-lg-12.col-md-12.col-sm-12.col-xs-12 > div.row > h1 {
+        font-family: kg_the_last_timeregular;
+        margin-left: 5%;
+        font-size: 2.5em;
+        margin-bottom: 1%;
+    }
+
+/*Container which holds one student object*/
+div.row.leerlingRow > div.col-sm-3.col-md-3.col-lg-3 {
+    text-align: center;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+    /*Image in the container which holds one student object*/
+    div.row.leerlingRow > div.col-sm-3.col-md-3.col-lg-3 > a > img {
+        border: rgb( 178, 240, 100 ) 5px solid;
+    }
+
+        /*Image in the container which holds one student object*/
+        div.row.leerlingRow > div.col-sm-3.col-md-3.col-lg-3 > a > img:hover {
+            border: rgb( 73, 196, 226 ) 5px solid;
+        }
+
+
+    /*p tag in the container which holds one student object*/
+    div.row.leerlingRow > div.col-sm-3.col-md-3.col-lg-3 > p {
+        font-size: 1.5em;
+        font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+    }
+
+
+
+/*#endregion*/
+
+/*#region 7.Leerling Dashboard*/
+
+div.dashBoardLeerling {
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(../Images/bg2.jpg) no-repeat center center fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+}
+
+    /*Status of who is logged in, Name, School, Class*/
+    div.dashBoardLeerling > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 {
+        text-align: right;
+    }
+
+    /*Container which holds the Exercises*/
+    div.dashBoardLeerling > div.col-sm-12.col-md-12.col-lg-12 > div.tab-content > div {
+        color: black;
+    }
+
+    /*Profile Picture of the logged in person*/
+    div.dashBoardLeerling > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.row > img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: rgb( 73, 196, 226 ) solid;
+        text-align: center;
+        float: right;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+        /*Hover state of the logged in person*/
+        div.dashBoardLeerling > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.row > img:hover {
+            border: rgb( 178, 240, 100 ) solid;
+        }
+
+    /*More Info about Themes*/
+    div.dashBoardLeerling > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.row > h1 {
+        font-size: x-large;
+    }
+
+    /*Menu*/
+    div.dashBoardLeerling > div.col-sm-12.col-md-12.col-lg-12 > ul.nav.nav-tabs {
+        margin-top: 1%;
+    }
+
+        /*Menu Tabs*/
+        div.dashBoardLeerling > div.col-sm-12.col-md-12.col-lg-12 > ul.nav.nav-tabs > li {
+            width: 50%;
+            font-size: large;
+            text-align: center;
+        }
+            /*Links in the Menu Tabs*/
+            div.dashBoardLeerling > div.col-sm-12.col-md-12.col-lg-12 > ul.nav.nav-tabs > li > a {
+                color: white;
+                border: none;
+            }
+                /*Hover state of the links in the Menu Tabs*/
+                div.dashBoardLeerling > div.col-sm-12.col-md-12.col-lg-12 > ul.nav.nav-tabs > li > a:hover {
+                    background-color: #5cb85c;
+                    border: none;
+                    text-decoration: underline;
+                }
+
+            /*State of the tab which is active*/
+            div.dashBoardLeerling > div.col-sm-12.col-md-12.col-lg-12 > ul.nav.nav-tabs > li.active {
+                background-color: #dff0d8;
+                border-color: #d6e9c6;
+                border-radius: 6px;
+            }
+
+                /*Link of the tab which is active*/
+                div.dashBoardLeerling > div.col-sm-12.col-md-12.col-lg-12 > ul.nav.nav-tabs > li.active > a {
+                    background-color: transparent;
+                    border: none;
+                    color: #3c763d;
+                    cursor: default;
+                }
+/*#endregion*/
+
+/*#region 8. Level Template*/
+div.levelTemplate {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url(../Images/bg2.jpg) no-repeat center center fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+    /*The titles*/
+    div.levelTemplate > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.col-xs-6.col-sm-6.col-md-6.col-lg-6 h1, h2 {
+        font-family: kg_the_last_timeregular;
+        padding: 1%;
+        border-radius: 14px 0px 14px 0px;
+        font-size: 2em;
+        float: left;
+        background-color: rgb( 178, 240, 100 );
+        text-align: center;
+    }
+
+    /*The clock text*/
+    div.levelTemplate > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.col-xs-6.col-sm-6.col-md-6.col-lg-6 > h2 {
+        float: right;
+    }
+
+        /*The clock image*/
+        div.levelTemplate > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.col-xs-6.col-sm-6.col-md-6.col-lg-6 > h2 > img[src="/Images/klok.png"] {
+            display: inline;
+        }
+
+    /*The Level container*/
+    div.levelTemplate > div.col-xs-12.col-sm-12.col-md-12.col-lg-12.levelContainer {
+        height: 80%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+        /*The level itself*/
+        div.levelTemplate > div.col-xs-12.col-sm-12.col-md-12.col-lg-12.levelContainer > div#level {
+            border: 6px rgb(178,240,100) solid;
+            height: 100%;
+            background-color: rgba(255,255,255,0.4);
+            border-radius: 14px 0px 14px 0px;
+        }
+
+
+div.levelIndicatorContainer {
+    text-align: justify;
+    margin-top: -12px;
+}
+
+    div.levelIndicatorContainer > div.col-xs-4.col-sm-4.col-md-4.col-lg-4 > div.levelIndicator {
+        width: 20px;
+        height: 20px;
+        background-color: grey;
+        border-radius: 50%;
+        vertical-align: top;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+    }
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+/*Responsiveness*/
+@media (max-width: 467px) {
+    /*Hide Level Indicator Container*/
+    div.levelIndicatorContainer {
+        display: none;
+    }
+}
+
+
+
+
+/*#endregion*/

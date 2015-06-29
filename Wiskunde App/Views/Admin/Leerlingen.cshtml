@@ -1,0 +1,44 @@
+﻿@model Wiskunde_App.ViewModels.KlaskeuzeVM
+
+@{
+    ViewBag.Title = "Leerlingen";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="@Url.Action("Dashboard", "Admin")"><i class="fa fa-home fa-fw"></i>Home</a></li>
+                <li><a href="@Url.Action("Klassen","Admin")"><i class="fa fa-list-alt fa-fw"></i>Klassen</a></li>
+                <li><a href="@Url.Action("Leerkrachten", "Admin")"><i class="fa fa-file-o fa-fw"></i>Leerkrachten</a></li>
+                <li class="active"><a href=""><i class="fa fa-bar-chart-o fa-fw"></i>Leerlingen</a></li>
+                <li><a href="@Url.Action("Wijzigwachtwoord", "Admin")"><i class="fa fa-table fa-fw"></i>Wijzig schooladministrator</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9 well">
+            <h1>Kies een klas</h1>
+            @*@using (Html.BeginForm("Toonleerlingen", "Admin", FormMethod.Post))*@
+            @using (Ajax.BeginForm("Toonleerlingen", "Admin", new AjaxOptions
+            {
+                HttpMethod = "POST",
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "leerlingenoverzicht"
+            }))
+{
+                <select name="klaskeuze">
+                    @foreach (var item in Model.klassen)
+                    {
+                        <option id="@item.klas.ID" value="@item.klas.ID">@item.klas.KlasNaam</option>
+                    }
+
+                </select>
+                <input type="submit" value="Selecteer klas">
+            }
+
+            <div id="leerlingenoverzicht">
+                <!-- Hierin worden de leerlingen getoond van een bepaalde klas-->
+            </div>
+        </div>
+    </div>
+</div>

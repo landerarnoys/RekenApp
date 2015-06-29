@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Keuzepagina student-leerkracht";
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Flor || Leerling - Juf/Meester</title>
+    <!-- Bootstrap CSS-->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <!-- Add custom CSS here -->
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/Images/favicon.ico">
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flor het cijfer monster is een project voor Howest - Vlaanderen. Deze in opdracht van Elke Gérard.">
+    <meta name="author" content="Tim Rijckaert, Alieke Baeke, Lander Arnoys, Matthias Trybou">
+</head>
+<body>
+
+    <!-- Full Page Image Header Area -->
+    <div class="headerLeerlingenDocenten">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+                <div data-cont="leerling">
+                    <a href="@Url.Action("Login","Leerling")">
+                    <img src="~/Images/leerling.png" class="img-circle" width="200" height="200" alt="Leerling Symbool" /></a>
+                </div>
+                <form method="post" action="/Leerling/Login">
+                    <button class="btn btn-default" role="button">Leerling</button>
+                </form>
+            </div>
+            <div class="row">
+                <div data-cont="leerkracht">
+                    <a href = "@Url.Action("Login","Leerkracht")">
+                    <img src="~/Images/leerkracht.png" class="img-circle" width="200" height="200" alt="Leerling Symbool" /></a>
+                </div>
+                <form method="post" action="/Leerkracht/Login">
+                    <button class="btn btn-default" role="button">Juf/Meester</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
+    <!--Scripts-->
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <!--Knockout niet nodig op de hoofdpagina-->
+    @*<script src="../Scripts/knockout-3.1.0.js"></script>*@
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            // Detect whether device supports orientationchange event, otherwise fall back to
+            // the resize event.
+            var supportsOrientationChange = "onorientationchange" in window,
+                orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
+            window.addEventListener(orientationEvent, function () {
+                console.log('HOLY ROTATING SCREENS BATMAN:' + window.orientation + " " + screen.width);
+            }, false);
+        });
+    </script>
+</body>
+</html>
+

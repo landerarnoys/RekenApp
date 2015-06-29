@@ -1,0 +1,438 @@
+﻿@model IEnumerable<Wiskunde_App.Models.Leerling>
+
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "";
+}
+
+<html>
+<head>
+    <title>Flor || Leerling Dashboard</title>
+    <!-- Bootstrap CSS-->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <!-- Add custom CSS here -->
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/Images/favicon.ico">
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flor het cijfer monster is een project voor Howest - Vlaanderen. Deze in opdracht van Elke Gérard.">
+    <meta name="author" content="Tim Rijckaert, Alieke Baeke, Lander Arnoys, Matthias Trybou">
+</head>
+<body>
+
+    <div class="dashBoardLeerling">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+                <img data-toggle="tooltip" data-placement="left" title="Klik om uit te loggen" src="http://www.she.be/imgpath/assets_img_she/2013/01/09/2464628/deze-muziekstijlen-maken-je-kind-crimineel_1000x667.JPG" class="img-responsive img-circle" alt="Profielfoto" />
+                <h1>Lander Arnoys</h1>
+                <p>De Springplank</p>
+                <p>1B</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#oefeningen" data-toggle="tab">Oefeningen</a></li>
+                <li><a href="#bloem" data-toggle="tab">Bloem</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <!-- Tabs -->
+            <div class="tab-content">
+                <!--Oefeningen-->
+                <div class="tab-pane fade in active" id="oefeningen">
+                    <!--Thema 1-->
+                    <div class="panel panel-success table-responsive">
+                        <!-- Panel Uitleg -->
+                        <div class="panel-heading">Thema 1: Getalbeeld Herkenning</div>
+                        <div class="panel-body">
+                            <h2>Getalbeelden</h2>
+                            <p>
+                                Met deze oefeningen leer je geleidelijk aan getallen herkennen in verschillende vormen.
+                            </p>
+                        </div>
+                        <!--/Panel Uitleg -->
+                        <!-- Table -->
+                        <table class="table table-hover table-striped success">
+                            <thead>
+                                <tr>
+                                    <th>Nummer</th>
+                                    <th>Naam</th>
+                                    <th>Oefening</th>
+                                    <th>Start</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Blokken Vergelijken</td>
+                                    <td><button role="button" class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Snel Blokken Vergelijken (0-5)</td>
+                                    <td><button role="button" class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>Snel Blokken Vergelijken (0-10)</td>
+                                    <td><button role="button" class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>Afbeelding Vergelijken</td>
+                                    <td><button role="button" class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>5.</td>
+                                    <td>Cijfer Vergelijken</td>
+                                    <td><button role="button" class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" class="btn btn-success">Start</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--/Table-->
+                    </div>
+                    <!--/Thema 1-->
+                    <!--Thema 2-->
+                    <div class="panel panel-info table-responsive">
+                        <!-- Panel Uitleg -->
+                        <div class="panel-heading">Thema 2: Optellen</div>
+                        <div class="panel-body">
+                            <h2>Optellen</h2>
+                            <p>In deze volgende set oefeningen leren we je optellen. We beginnen makkelijk en eindigen wanneer jij kan optellen.</p>
+                        </div>
+                        <!--/Panel Uitleg -->
+                        <!--Table-->
+                        <table class="table table-hover table-striped info table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Nummer</th>
+                                    <th>Naam</th>
+                                    <th>Oefening</th>
+                                    <th>Start</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>Tellen</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>7.</td>
+                                    <td>Tellen Moeilijker</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>8.</td>
+                                    <td>Optellen Met Raster (0-5)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>9.</td>
+                                    <td>Optellen Met Raster (0-10)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>10.</td>
+                                    <td>Optellen Met Hulp (0-10)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>11.</td>
+                                    <td>Optellen (0-10)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>12.</td>
+                                    <td>Optellen Met Hulp (0-20)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>13.</td>
+                                    <td>Optellen (0-20)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--/Table-->
+                    </div>
+                    <!--/Thema 2-->
+                    <!--Thema 3-->
+                    <div class="panel panel-success table-responsive">
+                        <!-- Panel Uitleg -->
+                        <div class="panel-heading">Thema 3: Aftrekken</div>
+                        <div class="panel-body">
+                            <h2>Aftrekken</h2>
+                            <p>
+                                In deze volgende set oefeningen leren we je optellen. We beginnen makkelijk en eindigen wanneer jij kan optellen.
+                            </p>
+                        </div>
+                        <!--/Panel Uitleg -->
+                        <!-- Table -->
+                        <table class="table table-hover table-striped success">
+                            <thead>
+                                <tr>
+                                    <th>Nummer</th>
+                                    <th>Naam</th>
+                                    <th>Oefening</th>
+                                    <th>Start</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>14.</td>
+                                    <td>Aftrekken Met Afbeeldingen (0-5)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>15.</td>
+                                    <td>Aftrekken Met 3D Kubus</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>16.</td>
+                                    <td>Aftrekken Met Hulp</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>17.</td>
+                                    <td>Aftrekken (0-5)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>18.</td>
+                                    <td>Optellen & Aftrekken (0-10)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>19.</td>
+                                    <td>Aftrekken (0-20)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--/Table-->
+                    </div>
+                    <!--/Thema 3-->
+                    <!--Thema 4-->
+                    <div class="panel panel-info table-responsive">
+                        <!-- Panel Uitleg -->
+                        <div class="panel-heading">Thema 4: Splitsen</div>
+                        <div class="panel-body">
+                            <h2>Splitsen</h2>
+                            <p>Getallen splitsen in twee andere getallen.</p>
+                        </div>
+                        <!--/Panel Uitleg -->
+                        <!--Table-->
+                        <table class="table table-hover table-striped info table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Nummer</th>
+                                    <th>Naam</th>
+                                    <th>Oefening</th>
+                                    <th>Start</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>20.</td>
+                                    <td>Splitsen</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>21.</td>
+                                    <td>Splitsen Met Afbeeldingen</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>22.</td>
+                                    <td>Splitsen Met Raster</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>23.</td>
+                                    <td>Splitsen Met Raster (0-10)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>24.</td>
+                                    <td>Splitsen (0-10)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>25.</td>
+                                    <td>Splitsen Met 3D Blokken</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>26.</td>
+                                    <td>Splitsen (0-10)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>27.</td>
+                                    <td>Splitsen (0-10)</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--/Table-->
+                    </div>
+                    <!--/Thema 4-->
+                    <!--Thema 5-->
+                    <div class="panel panel-success table-responsive">
+                        <!-- Panel Uitleg -->
+                        <div class="panel-heading">Thema 5: Optellen en Afrekken Met Brug</div>
+                        <div class="panel-body">
+                            <h2>Optellen en Aftrekken</h2>
+                            <p>
+                                We zijn er bijna in de volgende opgaves herhalen we het optellen en het aftrekken.
+                            </p>
+                        </div>
+                        <!--/Panel Uitleg -->
+                        <!-- Table -->
+                        <table class="table table-hover table-striped success">
+                            <thead>
+                                <tr>
+                                    <th>Nummer</th>
+                                    <th>Naam</th>
+                                    <th>Oefening</th>
+                                    <th>Start</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>28.</td>
+                                    <td>Over de 10 Met Raster</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>29.</td>
+                                    <td>Over de 10 Met Raster</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>30.</td>
+                                    <td>Over de 10 Met Raster</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>31.</td>
+                                    <td>Aftrekken Met Raster</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>32.</td>
+                                    <td>Aftrekken Met Raster</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                                <tr>
+                                    <td>33.</td>
+                                    <td>Aftrekken Met Raster</td>
+                                    <td><button role="button" disabled class="btn btn-success">Oefen</button></td>
+                                    <td><button role="button" disabled class="btn btn-success">Start</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--/Table-->
+                    </div>
+                    <!--/Thema-->
+                </div>
+                <!--/Oefeningen-->
+                <!--Bloem-->
+                <div class="tab-pane fade" id="bloem">
+                    <div class="panel panel-success">
+                        <!-- Panel Uitleg -->
+                        <div class="panel-heading">Je vooruitgang</div>
+                        <div class="panel-body">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <h2>Getalbeelden</h2>
+                                <p>
+                                    Door telkens goed te scoren op je oefeningen, zal geleidelijk aan je bloem groeien tot een volwaardig exemplaar.
+                                </p>
+                                <img src="http://0.static.wix.com/media/6130f3_b307dfd8130224af672d95882b040641.png_256" alt="Vooruitgang in bloemweergave" />
+                                <!--Loading Bar-->
+                                <h2>Voltooid</h2>
+                                <div class="progress progress-striped">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <span>60% compleet</span>
+                                    </div>
+                                </div>
+                                <div class="progress progress-striped">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <span>40% compleet</span>
+                                    </div>
+                                </div>
+                                <div class="progress progress-striped">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                        <span>20% Complete</span>
+                                    </div>
+                                </div>
+                                <!--/Loading Bar-->
+                            </div>
+                        </div>
+                        <!--/Panel Uitleg -->
+
+                    </div>
+                    <!--/Bloem-->
+                </div>
+                <!-- /Tabs -->
+            </div>
+        </div>
+    </div>
+
+
+    <!--Scripts-->
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <!--Knockout -->
+    @*<script src="../Scripts/knockout-3.1.0.js"></script>*@
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!--Activate the tabs-->
+    <script type="text/javascript">
+        $(function () {
+            $('#myTab a').click(function (e) {
+                e.preventDefault()
+                $(this).tab('show')
+            });
+        });
+
+    </script>
+</body>
+</html>

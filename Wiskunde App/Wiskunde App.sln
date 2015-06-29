@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiskundeApp", "WiskundeApp.csproj", "{E2779FEB-BA7E-4749-B432-AA8D834D13FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiskundeApp.Tests", "Wiskunde App.Tests\WiskundeApp.Tests.csproj", "{3C749758-7F88-42E9-8585-CF4C5B32C77A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://timrijckaert.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WiskundeApp.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = Wiskunde\u0020App.Tests\\WiskundeApp.Tests.csproj
+		SccProjectName2 = Wiskunde\u0020App.Tests
+		SccLocalPath2 = Wiskunde\u0020App.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2779FEB-BA7E-4749-B432-AA8D834D13FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2779FEB-BA7E-4749-B432-AA8D834D13FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2779FEB-BA7E-4749-B432-AA8D834D13FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2779FEB-BA7E-4749-B432-AA8D834D13FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C749758-7F88-42E9-8585-CF4C5B32C77A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C749758-7F88-42E9-8585-CF4C5B32C77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C749758-7F88-42E9-8585-CF4C5B32C77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C749758-7F88-42E9-8585-CF4C5B32C77A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

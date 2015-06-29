@@ -1,0 +1,167 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Flor || Leerling Login</title>
+    <!-- Bootstrap CSS-->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <!-- Add custom CSS here -->
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/Images/favicon.ico">
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flor het cijfer monster is een project voor Howest - Vlaanderen. Deze in opdracht van Elke Gérard.">
+    <meta name="author" content="Tim Rijckaert, Alieke Baeke, Lander Arnoys, Matthias Trybou">
+</head>
+<body>
+    <!--School Chooser-->
+    <div class="schoolChooser">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+                <h1>Kies uw school</h1>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row schoolRow">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://www.bruggecentrum.be/Home%20bestanden/logo.jpg" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool Brugge centrum</h3>
+                    <p>Spiegelrei 15 <br />8000 Brugge<br /><a href="http://www.bruggecentrum.be/">http://www.bruggecentrum.be/</a></p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://paperjs.org/assets/thumbnails/bad7d6f4ae9237c96a7e902645b45c04.jpg" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool De Pannebeke</h3>
+                    <p>Pannebekestraat 34 <br />8000 Brugge<br /><a href="http://www.brugge-depannebeke.be/">http://www.brugge-depannebeke.be/</a></p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://www.brugge-deregenboog.be/pictures/logo-BS-de-regenboog.gif" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool De Regenboog</h3>
+                    <p>Karel Ledeganckstraat 3 <br />8000 Brugge<br /><a href="http://www.brugge-deregenboog.be/">http://www.brugge-deregenboog.be/</a></p>
+                </div>
+            </div>
+            <div class="row schoolRow">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://www.brugge-despringplank.be/pictures/logo-BS-de-springplank_Brugge.gif" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool De Springplank</h3>
+                    <p>Hugo Losschaertstraat  5 <br />8000 Brugge<br /><a href="http://www.brugge-despringplank.be/">http://www.brugge-despringplank.be/</a></p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://paperjs.org/assets/thumbnails/dec6516975d176f92a53ea6c54b66ed9.jpg" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool MANITOBA</h3>
+                    <p>Manitobalaan 48<br />8200 Sint-Andries<br /><a href="http://www.bs-st-andries.be/">http://www.bs-st-andries.be/</a></p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://www.deboomhut-freinetschool.be/images/logo.jpg" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Freinetschool De Boomhut</h3>
+                    <p>Koning Leopold III-laan 48<br />8200 Sint-Andries<br /><a href="http://www.deboomhut-freinetschool.be/">http://www.deboomhut-freinetschool.be/</a></p>
+                </div>
+            </div>
+            <div class="row schoolRow">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://www.bruggeleeft.be/echo_files/tmb_536-xx-imgLogo.gif" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Koninklijk Atheneum Assebroek</h3>
+                    <p>Daverlostraat 132<br />8310 Assebroek<br /><a href="http://www.ka-assebroek.be/">http://www.ka-assebroek.be/</a></p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://www.basisschoolpaalbos.be/sites/default/files/logo_0.png" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool Paalbos</h3>
+                    <p>Gemeneweideweg-Zuid  121<br />8310 Assebroek<br /><a href="http://www.basisschoolpaalbos.be/">http://www.basisschoolpaalbos.be/</a></p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://www.bsdelinde.sgr25.be/joomla_linde/templates/rhuk_milkyway_ext_16/images/bs_delinde_logo.png" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool De Linde</h3>
+                    <p>Brieversweg  185<br />8310 Sint-Kruis<br /><a href="http://www.bsdelinde.sgr25.be/joomla_linde/">http://www.bsdelinde.be</a></p>
+                </div>
+            </div>
+            <div class="row schoolRow">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://www.detandem.be/accounts/142/images/layout/topmenu_01.gif" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool De Tandem</h3>
+                    <p>Leopold Debruynestraat 56<br />8310 Sint-Kruis<br /><a href="http://www.detandem.be/template.asp?f=home.asp/">http://www.detandem.be/</a></p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://www.sbsstmichiels.be/site/images/Basisschool_st-michiels2_home.png" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool Sint-Michiels</h3>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://www.de-triangel.be/figuren/logo's/tria1.jpg" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool de Triangel</h3>
+                </div>
+            </div>
+            <div class="row schoolRow">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://www.terpoorten.be/img/boog.png" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool Ter Poorten</h3>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://olvat.olvadetouwladder.be/sites/default/files/styles/logo/public/kop/logo250250.png?itok=E0IjkV8B" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool De Touwladder</h3>
+                    <p>Collegestraat 24 bis<br />8310 Assebroek<br /><a href="http://olvat.olvadetouwladder.be/">http://olvat.olvadetouwladder.be</a></p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <a href="@Url.Action("Loginstap2", "Leerling")">
+                        <img class="img-circle" src="http://www.kantelberg.be/templates/rt_radiance/images/logo/dark/logo.png" width="140" height="140" alt="Generic placeholder image">
+                    </a>
+                    <h3>Basisschool Kantelberg</h3>
+                    <p>De Linde 94<br />8310 Sint-Kruis<br /><a href="http://www.kantelberg.be">http://www.kantelberg.be</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/School Chooser-->
+    <!-- /Full Page Image Header Area -->
+    <!--Scripts-->
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <!--Knockout -->
+    @*<script src="../Scripts/knockout-3.1.0.js"></script>*@
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!--Temp Script Click Handlers-->
+    <script type="text/javascript">
+        //When DOM is ready 
+        $(function () {
+            var inputField = $("div.dialer > div.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div.input-group > input");
+            $("div.dialer > div.buttonDialerRow > div.col-xs-4.col-sm-4.col-md-4.col-lg-4").each(function (i) {
+                $(this).click(function () {
+                    inputField.val(inputField.val() + this.children[0].innerText);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

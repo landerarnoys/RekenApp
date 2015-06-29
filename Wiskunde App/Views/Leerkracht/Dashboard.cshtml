@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_LayoutLeerkracht.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href=""><i class="fa fa-home fa-fw"></i>Home</a></li>
+                <li><a href=""><i class="fa fa-list-alt fa-fw"></i>Klassen</a></li>
+                <li><a href="@Url.Action("Leerkrachten","Admin")"><i class="fa fa-file-o fa-fw"></i>Leerlingen</a></li>
+                <li><a href="@Url.Action("Leerlingen", "Admin")"><i class="fa fa-bar-chart-o fa-fw"></i>Exportatie</a></li>
+                <li><a href="#"><i class="fa fa-table fa-fw"></i>Wijzig wachtwoord</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9 well">
+            <h1>Dag @ViewBag.Leerkracht</h1>
+            <p>Je bent nu ingelogd als leerkracht om de wiskunde-applicatie "Flor het rekenmonster" te beheren.</p>
+            <p>Links in het menu heb je de keuze tussen klassen, leerlingen en exportatie.</p>
+            <p>Bij klassen zie je een overzicht van de klassen waar jij als leerkracht de juiste rechten voor bezit om te beheren. Je kan hier 
+            bijvoorbeeld ook de naam van een niveau wijzigen.</p>
+            <p>Onder de tab leerlingen kan je de resultaten van de leerlingen per klas bekijken en hen een nieuw niveau toekennen.
+            Daarnaast kan je ook de gegevens van de leerlingen wijzigen.</p>
+            <p>Onder de tab exportatie kan je er vervolgens voor zorgen dat resultaten van bepaalde leerlingen of zelfs van een volledige klas
+            per e-mail naar jou toegestuurd worden.</p>
+
+            
+        </div>
+    </div>
+</div>
+

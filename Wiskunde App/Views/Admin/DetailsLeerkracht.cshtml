@@ -1,0 +1,39 @@
+﻿@model Wiskunde_App.Models.Leerkracht
+
+@{
+    ViewBag.Title = "DetailsLeerkracht";
+}
+
+<h2>DetailsLeerkracht</h2>
+
+<div>
+    <h4>Leerkracht</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VoorNaam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VoorNaam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FamilieNaam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FamilieNaam)
+        </dd>
+
+
+    </dl>
+</div>
+
+<h3>Klassen:</h3>
+<div>
+    @foreach ( var item in Model.klassen)
+    {
+           @Html.DisplayFor(model => item.klas.KlasNaam);
+    }
+</div>

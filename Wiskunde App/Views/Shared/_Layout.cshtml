@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Wiskunde App || Dashboard schooladministrator</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/backend.css" rel="stylesheet" />
+    <style>
+        body {
+            padding-top: 50px;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="~/Images/florMenuKlein.png" class="logoFlorMenu" />
+                    <a class="navbar-brand">Flor het cijfermonster | Schooladmin</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-right" method="post" action="/Beheer/Uitloggen">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="form-control btn-danger">Uitloggen</button>
+                        @*<input type="submit" class="form-control btn-danger" value="Uitloggen">*@
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+        @RenderBody()
+    <!-- JQuery-->
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+    <!--Bootstrap-->
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+</body>
+</html>

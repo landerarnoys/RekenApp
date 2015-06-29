@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "Level";
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Flor || Oefening [ALIEKE/LANDER: NUMMER VAN DE OEFENING]</title>
+    <!-- Bootstrap CSS-->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <!-- Add custom CSS here -->
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/Images/favicon.ico">
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flor het cijfer monster is een project voor Howest - Vlaanderen. Deze in opdracht van Elke Gérard.">
+    <meta name="author" content="Tim Rijckaert, Alieke Baeke, Lander Arnoys, Matthias Trybou">
+</head>
+<body>
+    <!--Level Template-->
+    <div class="levelTemplate">
+        <!--Status-->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <!--Oefening Counter || Timer-->
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <h1>Oefening 1</h1>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <h2>
+                    <img src="~/Images/klok.png" width="30" height="30" class="img-responsive" alt="Klok Icon" />
+                    00:30
+                </h2>
+            </div>
+            <!--/Oefening Counter || Timer-->
+        </div>
+        <!--/Status-->
+        <!--Level Container-->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 levelContainer">
+            <div id="level">
+                @* Hier komt het level met partial Views *@
+            </div>
+        </div>
+        <!--/Level Container-->
+        <!--Level Indicator-->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 levelIndicatorContainer">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="levelIndicator"></div>
+                <div class="levelIndicator"></div>
+                <div class="levelIndicator"></div>
+                <div class="levelIndicator"></div>
+                <div class="levelIndicator"></div>
+                <span class="stretch"></span>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+        </div>
+        <!--/Level Indicator-->
+    </div>
+    <!--/Level Template-->
+    <!--Scripts-->
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <!--Knockout -->
+    @*<script src="../Scripts/knockout-3.1.0.js"></script>*@
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+</body>
+</html>

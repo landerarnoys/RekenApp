@@ -1,0 +1,136 @@
+﻿@model Wiskunde_App.Models.School
+
+@{
+    ViewBag.Title = "Wijzigschool";
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Wiskunde App || Wijzig school</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            padding-top: 50px;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="~/Images/florMenuKlein.png" class="logoFlorMenu" />
+                    <a class="navbar-brand">Flor het rekenmonster | dashboard Superuser</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-right" method="post" action="/Beheer/Uitloggen">
+                        @Html.AntiForgeryToken()
+                        <input type="submit" class="form-control" value="Uitloggen">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#">Klassen overzicht</a></li>
+                    <li><a href="#">Leerkrachten overzicht</a></li>
+                    <li><a href="#">Leerlingen overzicht</a></li>
+                    <li><a href="#">Edit schooladmin</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 well">
+                <h2>Wijzigschool</h2>
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true)
+                        @Html.HiddenFor(model => model.ID)
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Naam, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Naam)
+                                @Html.ValidationMessageFor(model => model.Naam)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Adres, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Adres)
+                                @Html.ValidationMessageFor(model => model.Adres)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Huisnummer, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Huisnummer)
+                                @Html.ValidationMessageFor(model => model.Huisnummer)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Postcode, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Postcode)
+                                @Html.ValidationMessageFor(model => model.Postcode)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Gemeente, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Gemeente)
+                                @Html.ValidationMessageFor(model => model.Gemeente)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.LogoUrl, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.LogoUrl)
+                                @Html.ValidationMessageFor(model => model.LogoUrl)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="School wijzigen" class="btn btn-default" />
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                <div>
+                    @Html.ActionLink("Terug naar overzicht", "Dashboard")
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery-->
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <!--Bootstrap-->
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+</body>
+
+</html>

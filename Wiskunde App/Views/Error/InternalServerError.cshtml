@@ -1,0 +1,60 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "Internal Server Error";
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Flor || Error</title>
+    <!-- Bootstrap CSS-->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <!-- Add custom CSS here -->
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/Images/favicon.ico">
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flor het cijfer monster is een project voor Howest - Vlaanderen. Deze in opdracht van Elke Gérard.">
+    <meta name="author" content="Tim Rijckaert, Alieke Baeke, Lander Arnoys, Matthias Trybou">
+</head>
+<body>
+    <div class="ErrorMode">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1>4 + 2 = #&!è§èè²çé)"à(ç)" <br /> Er ging iets mis.</h1>
+            <br />
+            <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Breng me veilig terug</button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a onclick="returnToSafety(2)" href="#"><span class="glyphicon glyphicon-chevron-left"></span> Terug</a></li>
+                    <li class="divider"></li>
+                    <li><a onclick="returnToSafety(1)" href="#"><span class="glyphicon glyphicon-home"></span> Thuis</a></li>
+                </ul>
+            </div>
+        </div>
+        <img class="img-responsive" src="~/Images/Logo_Flor_Verbaasd_potlood.png" alt="Flor kijkt verbaasd" width="250" height="324" />
+    </div>
+    <!--Jquery-->
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <!--Bootstrap-->
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script type="text/javascript">
+        function returnToSafety(id) {
+            switch (id) {
+                case 1:
+                    history.back();
+                case 2:
+                    window.location = "../Error";
+                    location.href = "wwww.google.com";
+                    console.log(window.location);
+                default:
+                    history.back();
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,97 @@
+﻿@RedColor: #a7413c;
+@GreenColor: #b2f064;
+@OrangeColor: #fd9243;
+@BrokenWhite: #eeeeee;
+
+.setBorderRadius(@color) {
+    border: 6px @color solid;
+}
+
+.setBackgroundColor(@color) {
+    background-color: @color;
+}
+
+.hide{
+    display:none;
+}
+
+.setInline {
+    display: inline;
+}
+
+html {
+    height: 100%;
+    background-image: url('../Images/SVG/bgLevel.svg');
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Make sure the body is inline for the bg Image to be take fullscreen*/
+body {
+    display: inline;
+}
+
+/*Holds the clock and the level*/
+.statusBarRow {
+    margin-bottom: 1%;
+    margin-left:0%;
+    margin-right:0%;
+}
+
+/*The container for the clock*/
+.clockContainer {
+    display: inline-flex;
+}
+
+//*The clock icon*/
+.clock {
+    height: 50%;
+    width: 10%;
+    margin-right: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+/*The speaker icon*/
+.speaker {
+    width: 5%;
+    vertical-align: baseline;
+}
+
+.whiteText {
+    color: white;
+}
+
+/*the heading styler for showing the level*/
+.levelBar {
+    text-align: center;
+    margin: 0%;
+}
+
+/*Contains the level shower*/
+.levelContainer {
+    .setBackgroundColor(@GreenColor);
+    border-radius: 6px;
+    .setBorderRadius(@GreenColor);
+}
+
+/*Contains the level*/
+.levelBodyContainer {
+    .setBorderRadius(@GreenColor);
+}
+
+/*Shows the video in the middle of the screen*/
+.introVideo {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Leave a space between the icon and the text*/
+.glyphicon{
+    margin-right:1%;
+}

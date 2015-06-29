@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Wiskunde_App.Models.LeerkrachtSchoolKlas>
+
+@{
+    ViewBag.Title = "Klassen";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="@Url.Action("Dashboard", "Admin")"><i class="fa fa-home fa-fw"></i>Home</a></li>
+                <li class="active"><a href=""><i class="fa fa-list-alt fa-fw"></i>Klassen</a></li>
+                <li><a href="@Url.Action("Leerkrachten","Admin")"><i class="fa fa-file-o fa-fw"></i>Leerkrachten</a></li>
+                <li><a href="@Url.Action("Leerlingen", "Admin")"><i class="fa fa-bar-chart-o fa-fw"></i>Leerlingen</a></li>
+                <li><a href="@Url.Action("Wijzigwachtwoord", "Admin")"><i class="fa fa-table fa-fw"></i>Wijzig schooladministrator</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9 well">
+            <h1>Klasoverzicht</h1>
+            <p>
+                @Html.ActionLink("Nieuwe klas toevoegen", "Create")
+            </p>
+            <table class="table">
+                <tr>
+                    <th>
+                        Klasnaam
+                    </th>
+                    <th>
+                        Leerkrachtnaam
+                    </th>
+                    <th>
+                        Klas wijzigen, verwijderen of details bekijken
+                    </th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.klas.KlasNaam)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.leerkracht.VoorNaam)
+                            @Html.DisplayFor(modelItem => item.leerkracht.FamilieNaam)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Klas wijzigen", "EditKlas", new { id = item.ID }) |
+                            @Html.ActionLink("Details klas bekijken", "DetailsKlas", new { id = item.ID }) |
+                            @Html.ActionLink("Klas verwijderen", "DeleteKlas", new { id = item.ID })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+            
+        </div>
+    </div>
+</div>

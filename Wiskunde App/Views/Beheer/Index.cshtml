@@ -1,0 +1,50 @@
+﻿@model Wiskunde_App.ViewModels.SUViewModel
+@{
+    ViewBag.Title = "Log in als leerkracht";
+    Layout = "";
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Flor || Login administrator</title>
+    <!-- Bootstrap CSS-->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <!-- Add custom CSS here -->
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/Images/favicon.ico">
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flor het wiskunde monster is een project voor Howest - Vlaanderen. Deze in opdracht van Elke Gérard.">
+    <meta name="author" content="Tim Rijckaert, Alieke Baeke, Lander Arnoys, Matthias Trybou">
+</head>
+<body>
+    <div class="container loginLeerkracht">
+        <div class="row">
+            <div class="text-center">
+                <img src="~/Images/Logo_Flor.png" class="img-responsive" />
+                <form method="post">
+                    <h1>Administrator Log-in</h1>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Gebruikersnaam" name="Gebruikersnaam" required="required">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Paswoord" name="Wachtwoord" required="required">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    </div>
+                    <br />
+                    <input type="submit" value="Inloggen" class="btn btn-success">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+    <!-- JQuery-->
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <!--Bootstrap-->
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+</body>
+</html>

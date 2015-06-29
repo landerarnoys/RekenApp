@@ -1,0 +1,42 @@
+﻿@model Wiskunde_App.Models.Klas
+
+@{
+    ViewBag.Title = "DetailsKlas";
+}
+
+<h2>DetailsKlas</h2>
+
+<div>
+    <h4>Klas</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KlasNaam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KlasNaam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaximumAantalLeerlingen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaximumAantalLeerlingen)
+        </dd>
+
+      
+
+    </dl>
+</div>
+
+<div>
+    <ul>
+    @foreach (var item in Model.leerlingen)
+    {
+        <li> @Html.DisplayFor(model => item.Voornaam) @Html.DisplayFor(model => item.Familienaam)</li>
+    }
+    </ul>
+</div>
+

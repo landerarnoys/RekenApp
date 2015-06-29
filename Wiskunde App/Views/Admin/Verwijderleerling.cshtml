@@ -1,0 +1,80 @@
+﻿@model Wiskunde_App.Models.Leerling
+
+@{
+    ViewBag.Title = "Verwijderleerling";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="@Url.Action("Dashboard", "Admin")"><i class="fa fa-home fa-fw"></i>Home</a></li>
+                <li><a href="@Url.Action("Klassen","Admin")"><i class="fa fa-list-alt fa-fw"></i>Klassen</a></li>
+                <li><a href="@Url.Action("Leerkrachten", "Admin")"><i class="fa fa-file-o fa-fw"></i>Leerkrachten</a></li>
+                <li class="active"><a href=""><i class="fa fa-bar-chart-o fa-fw"></i>Leerlingen</a></li>
+                <li><a href="@Url.Action("Wijzigwachtwoord", "Admin")"><i class="fa fa-table fa-fw"></i>Wijzig schooladministrator</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9 well">
+            <h1>Verwijder leerling</h1>
+
+            <h3>Ben jij zeker dat je deze leerling wil verwijderen?</h3>
+            <div>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Voornaam)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Voornaam)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Familienaam)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Familienaam)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Klasnummer)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Klasnummer)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.klas.KlasNaam)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.klas.KlasNaam)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FotoLeerling)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.FotoLeerling)
+                    </dd>
+
+                </dl>
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Verwijder leerling" class="btn btn-default" /> |
+                        @Html.ActionLink("Terug naar overzicht", "Leerlingen")
+                    </div>
+                }
+            </div>
+</div>
+</div>
+</div>
